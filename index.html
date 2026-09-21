@@ -9,14 +9,14 @@
 <body>
     <div class="container">
         <header>
-            <h1>🔬 Endoscope Inspection & Repair Log</h1>
+            <h1>Endoscope Inspection & Repair Log</h1>
             <p>Prototype Version 1.0 (HTML & CSS Concept)</p>
         </header>
 
         <main class="dashboard-layout">
-            <!-- Left Side: Input Form (Semantic Section) -->
+            <!-- Left Side: Input Form -->
             <section class="form-container">
-                <h2>📥 Incoming Inspection</h2>
+                <h2>Incoming Inspection</h2>
                 <form id="inspectionForm">
                     <div class="form-group">
                         <label for="serial">Scope Serial Number</label>
@@ -29,16 +29,20 @@
                             <option value="colonoscope">Colonoscope</option>
                             <option value="gastroscope">Gastroscope</option>
                             <option value="bronchoscope">Bronchoscope</option>
+                            <option value="duodenoscope">Duodenoscope</option>
+                            <option value="rigid scope">Rigid Scope</option>
                         </select>
                     </div>
 
                     <div class="form-group">
-                        <label for="damageType">Primary Damage Detected</label>
-                        <select id="damageType">
-                            <option value="lens">Lens Scratch / Fluid Invasion</option>
-                            <option value="sheath">Sheath Tear / Bending Section</option>
-                            <option value="channels">Biopsy Channel Blockage</option>
-                            <option value="angulation">Angulation Wire Failure</option>
+                        <label for="repairCategory">Repair Category</label>
+                        <select id="repairCategory">
+                            <option value="minor">Minor Repair</option>
+                            <option value="medium">Medium Repair</option>
+                            <option value="major">Major Repair</option>
+                            <option value="overhaul">Overhaul Repair</option>
+                            <option value="major + CCD">Major + CCD</option>
+                            <option value="overhaul + CCD">Overhaul + CCD</option>
                         </select>
                     </div>
 
@@ -47,15 +51,25 @@
                         <textarea id="notes" rows="3" placeholder="Describe the damage severity..."></textarea>
                     </div>
 
-                    <button type="button" class="btn-primary" onclick="alert('Great job! When you learn JavaScript in Month 3, clicking this button will permanently save this data to the list on the right!')">
+                    <button type="button" class="btn-primary" onclick="alert('Yay! Should be saved to the right ... hopefully')">
                         Log Scope Data
                     </button>
                 </form>
             </section>
 
-            <!-- Right Side: Tracking List (Semantic Section) -->
+            <!-- Right Side: Tracking List -->
+
+            <!-- This section should have a button, letting you click to open another form, for filling out the service report-->
+            <!-- Button - click - dropdown type per scope anatomy, click on, select pass or fail, optional note - continue -->
+            <!-- For fun - later would be nice to implement where it can select the scope type, which will decide the photo of the scope
+             allowing you to select from the image instead, for problem areas, could include a 'print form' option later, 
+             where if you print, it can include the scope diagram with ittle 'caution' symbols on the problem areas
+             eventually could be used to assign scope level or what parts likely need to be ordered, and after being confirmed by tech,
+             could then be sent to admin to order
+             likely could make a order sheet to submit orders dll-->
+
             <section class="list-container">
-                <h2>⏳ Active Repairs & History</h2>
+                <h2>Active Repairs & History</h2>
                 <div class="table-wrapper">
                     <table>
                         <thead>
@@ -92,7 +106,7 @@
         </main>
 
         <footer>
-            <p>&copy; 2026 Enterprise Medical Logistics Portfolio Project</p>
+            <p>Portfolio Project - In Construction</p>
         </footer>
     </div>
 </body>
