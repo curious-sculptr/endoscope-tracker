@@ -1,1 +1,99 @@
-index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endoscope Tracker Prototype</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔬 Endoscope Inspection & Repair Log</h1>
+            <p>Prototype Version 1.0 (HTML & CSS Concept)</p>
+        </header>
+
+        <main class="dashboard-layout">
+            <!-- Left Side: Input Form (Semantic Section) -->
+            <section class="form-container">
+                <h2>📥 Incoming Inspection</h2>
+                <form id="inspectionForm">
+                    <div class="form-group">
+                        <label for="serial">Scope Serial Number</label>
+                        <input type="text" id="serial" placeholder="e.g., ENDO-9928" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="scopeType">Model / Type</label>
+                        <select id="scopeType">
+                            <option value="colonoscope">Colonoscope</option>
+                            <option value="gastroscope">Gastroscope</option>
+                            <option value="bronchoscope">Bronchoscope</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="damageType">Primary Damage Detected</label>
+                        <select id="damageType">
+                            <option value="lens">Lens Scratch / Fluid Invasion</option>
+                            <option value="sheath">Sheath Tear / Bending Section</option>
+                            <option value="channels">Biopsy Channel Blockage</option>
+                            <option value="angulation">Angulation Wire Failure</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="notes">Inspection Notes</label>
+                        <textarea id="notes" rows="3" placeholder="Describe the damage severity..."></textarea>
+                    </div>
+
+                    <button type="button" class="btn-primary" onclick="alert('Great job! When you learn JavaScript in Month 3, clicking this button will permanently save this data to the list on the right!')">
+                        Log Scope Data
+                    </button>
+                </form>
+            </section>
+
+            <!-- Right Side: Tracking List (Semantic Section) -->
+            <section class="list-container">
+                <h2>⏳ Active Repairs & History</h2>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Serial No.</th>
+                                <th>Type</th>
+                                <th>Reported Issue</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>SN-4412A</strong></td>
+                                <td>Gastroscope</td>
+                                <td>Lens Scratch</td>
+                                <td><span class="badge badge-repair">In Repair</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>SN-8891B</strong></td>
+                                <td>Colonoscope</td>
+                                <td>Sheath Tear</td>
+                                <td><span class="badge badge-incoming">Awaiting Insp.</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>SN-2230X</strong></td>
+                                <td>Bronchoscope</td>
+                                <td>Channel Blockage</td>
+                                <td><span class="badge badge-complete">Completed</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Enterprise Medical Logistics Portfolio Project</p>
+        </footer>
+    </div>
+</body>
+</html>
