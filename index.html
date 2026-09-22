@@ -54,6 +54,85 @@
                     <button type="button" class="btn-primary" onclick="alert('Yay! Should be saved to the right ... hopefully')">
                         Log Scope Data
                     </button>
+
+
+                 <style>
+                 @media print {
+                   .no-print {
+                   display: none !important;
+                   }
+                  }
+                 </style>
+
+
+                    <div class="form-group" style="display: inline-flex; align-items: center; gap: 8px;">
+                        <form>
+                            <!--Bending Rubber-->
+                            <label for="result" style="margin-right: 15px;"><b>Bending Rubber</b></label>
+                            
+                            <label for="pass">Pass</label>
+                            <input type="radio" id="pass" name="result" value="pass">
+                            
+                            <label for="fail">Fail</label>
+                            <input type="radio" id="fail" name="result" value="fail">
+                            
+                            <label for="description" style="margin-left: 10px;">Description</label>
+                            <textarea name="result" id="description" rows="1" placeholder="Leaking, ..."></textarea>
+
+                            <!--Distal Head-->
+                            <!--Nozzle Air/Water-->
+                            <!--Camera Lens-->
+                            <!--Light Guide Lens-->
+                            <!--Biopsy Channel-->
+                            <!--Bending Section-->
+                            <!--Insertion Tube-->
+                            <!--Stress Rubber Boot #1-->
+                            <!--Distal Head-->
+                            <!--Distal Head-->
+                            <!--Distal Head-->
+                            <!--Distal Head-->
+                            <!--Distal Head-->
+                            <!--Distal Head-->
+                            <!--Distal Head-->
+                            <!--Distal Head-->
+                            <!--Distal Head-->
+                            <!--Distal Head-->
+                            <!--Distal Head-->
+                            <!--Distal Head-->
+                            <!--Distal Head-->
+                            <!--Distal Head-->
+                            <!--Distal Head-->
+                            <!--Distal Head-->
+                            <!--Distal Head-->
+                            <!--Distal Head-->
+                            <!--Distal Head-->
+                            <!--Distal Head-->
+                            <!--Distal Head-->
+
+
+                            <!--FOR ERCP-->
+                            <!--Distal Head-->
+                            <!--Distal Head-->
+                            <!--Distal Head-->
+                            <!--Distal Head-->
+
+                            <!--FOR FIBER-->
+                            <!--Distal Head-->
+                            <!--Distal Head-->
+
+
+                        </div>
+
+                        <!-- BUTTONS SECTION (Sits cleanly across the bottom) -->
+                        <div class="no-print" style="display: flex; gap: 10px; width: 100%;">
+                            <!-- Submit Button -->
+                            <button type="submit" style="flex: 1; padding: 10px; cursor: pointer;">Submit Form</button>
+        
+                             <!-- Print Button (window.print() tells the browser to open the print menu) -->
+                            <button type="button" onclick="window.print()" style="flex: 1; padding: 10px; cursor: pointer;">Print Form</button>
+                        </div>
+                        </form>
+                    </div>
                 </form>
             </section>
 
@@ -70,7 +149,42 @@
 
             <!-- This should use the FORM ELEMENT w/ ACTION and INPUT 
              REVIEW THE FORMS SECTION YA -->
+            <!--
+            <form action="">
+             <label for="email"> Email Address: </label>
+             <input type="email" id="email" />
+            </form> 
             
+
+            <form action="">
+            <label for="email">Email address:</label>
+              <input type="email" id="email" name="email" />
+              <button type="reset">Reset form</button>
+              <button type="submit">Submit form</button>
+            </form>
+            
+            
+            <form action="">
+              <label for="email">Email Address (Required field):</label>
+              <input required type="email" name="email" id="email" />
+              <button type="submit">Submit Form</button>
+            </form>
+            -->
+
+         <!-- Below is testing the button function, will tweak looks later-->
+         <!--  <form>
+              <p>Result:</p>
+  
+                <input type="radio" id="pass" name="result" value="pass">
+                <label for="pass">Pass</label><br>
+  
+                <input type="radio" id="fail" name="result" value="fail">
+                <label for="fail">Fail</label>
+            </form>
+
+            --> 
+
+
 
             <section class="list-container">
                 <h2>Active Repairs & History</h2>
