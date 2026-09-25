@@ -45,7 +45,7 @@
                             <option value="overhaul + CCD">Overhaul + CCD</option>
                         </select>
                     </div>
-
+<!--
                     <div class="form-group">
                         <label for="notes">Inspection Notes</label>
                         <textarea id="notes" rows="3" placeholder="Describe the damage severity..."></textarea>
@@ -54,6 +54,8 @@
                     <button type="button" class="btn-primary" onclick="alert('Yay! Should be saved to the right ... hopefully')">
                         Log Scope Data
                     </button>
+                    </form>
+                -->
 
 
                  <style>
@@ -64,100 +66,127 @@
                   }
                  </style>
 
-
-                    <div class="form-group" style="display: inline-flex; align-items: center; gap: 8px;">
-                        <form>
-                            <!--Bending Rubber-->
-                            <label for="result" style="margin-right: 15px;"><b>Bending Rubber</b></label>
-                            
-                            <label for="pass">Pass</label>
-                            <input type="radio" id="pass" name="result" value="pass">
-                            
-                            <label for="fail">Fail</label>
-                            <input type="radio" id="fail" name="result" value="fail">
-                            
-                            <label for="description" style="margin-left: 10px;">Description</label>
-                            <textarea name="result" id="description" rows="1" placeholder="Leaking, ..."></textarea>
-
-                            <!--Distal Head-->
-                            <label for="result" style="margin-right: 15px;"><b>Distal Head</b></label>
-                            
-                            <label for="pass">Pass</label>
-                            <input type="radio" id="pass" name="result" value="pass">
-                            
-                            <label for="fail">Fail</label>
-                            <input type="radio" id="fail" name="result" value="fail">
-                            
-                            <label for="description" style="margin-left: 10px;">Description</label>
-                            <textarea name="result" id="description" rows="1" placeholder="Scratched, ..."></textarea>
-
-
-                            <!--Nozzle Air/Water-->
-                            <label for="result" style="margin-right: 15px;"><b>Nozzle Air/Water</b></label>
-                            
-                            <label for="pass">Pass</label>
-                            <input type="radio" id="pass" name="result" value="pass">
-                            
-                            <label for="fail">Fail</label>
-                            <input type="radio" id="fail" name="result" value="fail">
-                            
-                            <label for="description" style="margin-left: 10px;">Description</label>
-                            <textarea name="result" id="description" rows="1" placeholder="Leaking, ..."></textarea>
+                 <!-- Right Side / Below: Component Checklist-->
+                <section class="checklist-container">
+                    <h2>Component Checklist</h2>
+                    <style>
+                        @media print {
+                            .no-print { display: none !important; }
+                        }
+                        .checklist-row {
+                            display: flex;
+                            align-items: center;
+                            gap: 15px;
+                            margin-bottom: 12px;
+                            padding-bottom: 8px;
+                            border-bottom: 1px solid #eee;
+                        }
+                        .checklist-label {
+                            width: 150px;
+                            font-weight: bold;
+                        }
+                        .radio-group {
+                            display: flex;
+                            align-items: center;
+                            gap: 8px;
+                        }
+                        .checklist-row textarea {
+                            flex-grow: 1;
+                            resize: none;
+                        }
+                    </style>
 
 
-                            <!--Camera Lens-->
-                            <label for="result" style="margin-right: 15px;"><b>Camera Lens</b></label>
-                            
-                            <label for="pass">Pass</label>
-                            <input type="radio" id="pass" name="result" value="pass">
-                            
-                            <label for="fail">Fail</label>
-                            <input type="radio" id="fail" name="result" value="fail">
-                            
-                            <label for="description" style="margin-left: 10px;">Description</label>
-                            <textarea name="result" id="description" rows="1" placeholder="Scratched, ..."></textarea>
 
+                    <!-- style="display: inline-flex; align-items: center; gap: 8px;" -->
 
-                            <!--Light Guide Lens-->
-                            <label for="result" style="margin-right: 15px;"><b>Light Guide Lens</b></label>
-                            
-                            <label for="pass">Pass</label>
-                            <input type="radio" id="pass" name="result" value="pass">
-                            
-                            <label for="fail">Fail</label>
-                            <input type="radio" id="fail" name="result" value="fail">
-                            
-                            <label for="description" style="margin-left: 10px;">Description</label>
-                            <textarea name="result" id="description" rows="1" placeholder="Dim, ..."></textarea>
+                        <div class="checklist-form">
+                    <!-- Bending Rubber -->
+                    <div class="checklist-row">
+                        <span class="checklist-label">Bending Rubber</span>
+                        <div class="radio-group">
+                            <input type="radio" id="bending_pass" name="bending_rubber" value="pass">
+                            <label for="bending_pass">Pass</label>
+                            <input type="radio" id="bending_fail" name="bending_rubber" value="fail">
+                            <label for="bending_fail">Fail</label>
+                        </div>
+                        <textarea name="bending_desc" id="bending_desc" rows="1" placeholder="Leaking, ..."></textarea>
+                    </div>
 
+                    <!-- Distal Head -->
+                    <div class="checklist-row">
+                        <span class="checklist-label">Distal Head</span>
+                        <div class="radio-group">
+                            <input type="radio" id="distal_pass" name="distal_head" value="pass">
+                            <label for="distal_pass">Pass</label>
+                            <input type="radio" id="distal_fail" name="distal_head" value="fail">
+                            <label for="distal_fail">Fail</label>
+                        </div>
+                        <textarea name="distal_desc" id="distal_desc" rows="1" placeholder="Scratched, ..."></textarea>
+                    </div>
 
-                            <!--Biopsy Channel-->
-                            <label for="result" style="margin-right: 15px;"><b>Biopsy Channel</b></label>
-                            
-                            <label for="pass">Pass</label>
-                            <input type="radio" id="pass" name="result" value="pass">
-                            
-                            <label for="fail">Fail</label>
-                            <input type="radio" id="fail" name="result" value="fail">
-                            
-                            <label for="description" style="margin-left: 10px;">Description</label>
-                            <textarea name="result" id="description" rows="1" placeholder="Leaking, ..."></textarea>
+                    <!-- Nozzle Air/Water -->
+                    <div class="checklist-row">
+                        <span class="checklist-label">Nozzle Air/Water</span>
+                        <div class="radio-group">
+                            <input type="radio" id="nozzle_pass" name="nozzle_aw" value="pass">
+                            <label for="nozzle_pass">Pass</label>
+                            <input type="radio" id="nozzle_fail" name="nozzle_aw" value="fail">
+                            <label for="nozzle_fail">Fail</label>
+                        </div>
+                        <textarea name="nozzle_desc" id="nozzle_desc" rows="1" placeholder="Leaking, ..."></textarea>
+                    </div>
 
+                    <!-- Camera Lens -->
+                    <div class="checklist-row">
+                        <span class="checklist-label">Camera Lens</span>
+                        <div class="radio-group">
+                            <input type="radio" id="camera_pass" name="camera_lens" value="pass">
+                            <label for="camera_pass">Pass</label>
+                            <input type="radio" id="camera_fail" name="camera_lens" value="fail">
+                            <label for="camera_fail">Fail</label>
+                        </div>
+                        <textarea name="camera_desc" id="camera_desc" rows="1" placeholder="Scratched, ..."></textarea>
+                    </div>
 
-                            <!--Bending Section-->
-                            <label for="result" style="margin-right: 15px;"><b>Bending Section</b></label>
-                            
-                            <label for="pass">Pass</label>
-                            <input type="radio" id="pass" name="result" value="pass">
-                            
-                            <label for="fail">Fail</label>
-                            <input type="radio" id="fail" name="result" value="fail">
-                            
-                            <label for="description" style="margin-left: 10px;">Description</label>
-                            <textarea name="result" id="description" rows="1" placeholder="Misaligned, ..."></textarea>
+                    <!-- Light Guide Lens -->
+                    <div class="checklist-row">
+                        <span class="checklist-label">Light Guide Lens</span>
+                        <div class="radio-group">
+                            <input type="radio" id="light_pass" name="light_lens" value="pass">
+                            <label for="light_pass">Pass</label>
+                            <input type="radio" id="light_fail" name="light_lens" value="fail">
+                            <label for="light_fail">Fail</label>
+                        </div>
+                        <textarea name="light_desc" id="light_desc" rows="1" placeholder="Dim, ..."></textarea>
+                    </div>
 
+                    <!-- Biopsy Channel -->
+                    <div class="checklist-row">
+                        <span class="checklist-label">Biopsy Channel</span>
+                        <div class="radio-group">
+                            <input type="radio" id="biopsy_pass" name="biopsy_channel" value="pass">
+                            <label for="biopsy_pass">Pass</label>
+                            <input type="radio" id="biopsy_fail" name="biopsy_channel" value="fail">
+                            <label for="biopsy_fail">Fail</label>
+                        </div>
+                        <textarea name="biopsy_desc" id="biopsy_desc" rows="1" placeholder="Leaking, ..."></textarea>
+                    </div>
 
-                            <!--Insertion Tube-->
+                    <!-- Bending Section -->
+                    <div class="checklist-row">
+                        <span class="checklist-label">Bending Section</span>
+                        <div class="radio-group">
+                            <input type="radio" id="bending_sec_pass" name="bending_section" value="pass">
+                            <label for="bending_sec_pass">Pass</label>
+                            <input type="radio" id="bending_sec_fail" name="bending_section" value="fail">
+                            <label for="bending_sec_fail">Fail</label>
+                        </div>
+                        <textarea name="bending_sec_desc" id="bending_sec_desc" rows="1" placeholder="Stiff, ..."></textarea>
+
+                        
+
+                            <!--Insertion Tube--
                             <label for="result" style="margin-right: 15px;"><b>Insertion Tube</b></label>
                             
                             <label for="pass">Pass</label>
@@ -170,7 +199,7 @@
                             <textarea name="result" id="description" rows="1" placeholder="Kinked, ..."></textarea>
 
 
-                            <!--Stress Rubber Boot #1-->
+                            <!--Stress Rubber Boot #1--
                             <label for="result" style="margin-right: 15px;"><b>Stress Rubber Boot #1</b></label>
                             
                             <label for="pass">Pass</label>
@@ -183,7 +212,7 @@
                             <textarea name="result" id="description" rows="1" placeholder="Leaking, ..."></textarea>
 
 
-                            <!--Biopsy Inlet Port-->
+                            <!--Biopsy Inlet Port--
                             <label for="result" style="margin-right: 15px;"><b>Biopsy Inlet Port</b></label>
                             
                             <label for="pass">Pass</label>
@@ -196,7 +225,7 @@
                             <textarea name="result" id="description" rows="1" placeholder="Leaking, ..."></textarea>
 
 
-                            <!--Control Body-->
+                            <!--Control Body--
                             <label for="result" style="margin-right: 15px;"><b>Control Body</b></label>
                             
                             <label for="pass">Pass</label>
@@ -209,7 +238,7 @@
                             <textarea name="result" id="description" rows="1" placeholder="Cracked, ..."></textarea>
 
 
-                            <!--Angulation Up-->
+                            <!--Angulation Up--
                             <label for="result" style="margin-right: 15px;"><b>Angulation Up</b></label>
                             
                             <label for="pass">Pass</label>
@@ -222,7 +251,7 @@
                             <textarea name="result" id="description" rows="1" placeholder="Loss -15, ..."></textarea>
 
 
-                            <!--Angulation Down-->
+                            <!--Angulation Down--
                             <label for="result" style="margin-right: 15px;"><b>Angulation Down</b></label>
                             
                             <label for="pass">Pass</label>
@@ -235,7 +264,7 @@
                             <textarea name="result" id="description" rows="1" placeholder="Loss -15, ..."></textarea>
 
 
-                            <!--Angulation Left-->
+                            <!--Angulation Left--
                             <label for="result" style="margin-right: 15px;"><b>Angulation Left</b></label>
                             
                             <label for="pass">Pass</label>
@@ -248,7 +277,7 @@
                             <textarea name="result" id="description" rows="1" placeholder="Loss -15, ..."></textarea>
 
 
-                            <!--Angulation Right-->
+                            <!--Angulation Right--
                             <label for="result" style="margin-right: 15px;"><b>Angulation Right</b></label>
                             
                             <label for="pass">Pass</label>
@@ -261,7 +290,7 @@
                             <textarea name="result" id="description" rows="1" placeholder="Loss -15, ..."></textarea>
 
 
-                            <!--Brake U/D-->
+                            <!--Brake U/D--
                             <label for="result" style="margin-right: 15px;"><b>Brake U/D</b></label>
                             
                             <label for="pass">Pass</label>
@@ -274,7 +303,7 @@
                             <textarea name="result" id="description" rows="1" placeholder="Leaking, ..."></textarea>
 
 
-                            <!--Brake L/R-->
+                            <!--Brake L/R--
                             <label for="result" style="margin-right: 15px;"><b>Break L/R</b></label>
                             
                             <label for="pass">Pass</label>
@@ -287,7 +316,7 @@
                             <textarea name="result" id="description" rows="1" placeholder="Leaking, ..."></textarea>
 
 
-                            <!--Air/Water Channel-->
+                            <!--Air/Water Channel--
                             <label for="result" style="margin-right: 15px;"><b>Air/Water Channel</b></label>
                             
                             <label for="pass">Pass</label>
@@ -300,7 +329,7 @@
                             <textarea name="result" id="description" rows="1" placeholder="Leaking, ..."></textarea>
 
 
-                            <!--Suction Channel-->
+                            <!--Suction Channel--
                             <label for="result" style="margin-right: 15px;"><b>Suction Channel</b></label>
                             
                             <label for="pass">Pass</label>
@@ -313,7 +342,7 @@
                             <textarea name="result" id="description" rows="1" placeholder="Clogged, ..."></textarea>
 
 
-                            <!--Switch Electrical 1,2,3,4,5-->
+                            <!--Switch Electrical 1,2,3,4,5--
                             <label for="result" style="margin-right: 15px;"><b>Switch Electrical 1,2,3,4,5</b></label>
                             
                             <label for="pass">Pass</label>
@@ -326,7 +355,7 @@
                             <textarea name="result" id="description" rows="1" placeholder="Switch 3 non-functioning, ..."></textarea>
 
 
-                            <!--Stress Rubber Boot #2-->
+                            <!--Stress Rubber Boot #2--
                             <label for="result" style="margin-right: 15px;"><b>Stress Rubber Boot #2</b></label>
                             
                             <label for="pass">Pass</label>
@@ -339,7 +368,7 @@
                             <textarea name="result" id="description" rows="1" placeholder="Leaking, ..."></textarea>
 
 
-                            <!--Light Guide Tube-->
+                            <!--Light Guide Tube--
                             <label for="result" style="margin-right: 15px;"><b>Light Guide Tube</b></label>
                             
                             <label for="pass">Pass</label>
@@ -352,7 +381,7 @@
                             <textarea name="result" id="description" rows="1" placeholder="Dim 60%, ..."></textarea>
 
 
-                            <!--Stress Rubber Boot #3-->
+                            <!--Stress Rubber Boot #3--
                             <label for="result" style="margin-right: 15px;"><b>Stress Rubber Boot</b></label>
                             
                             <label for="pass">Pass</label>
@@ -365,7 +394,7 @@
                             <textarea name="result" id="description" rows="1" placeholder="Leaking, ..."></textarea>
 
 
-                            <!--Electrical Housing-->
+                            <!--Electrical Housing--
                             <label for="result" style="margin-right: 15px;"><b>Electrical Housing</b></label>
                             
                             <label for="pass">Pass</label>
@@ -378,7 +407,7 @@
                             <textarea name="result" id="description" rows="1" placeholder="Leaking, ..."></textarea>
 
 
-                            <!--Electrical Pin Unit-->
+                            <!--Electrical Pin Unit--
                             <label for="result" style="margin-right: 15px;"><b>Electrical Pin Unit</b></label>
                             
                             <label for="pass">Pass</label>
@@ -391,7 +420,7 @@
                             <textarea name="result" id="description" rows="1" placeholder="Leaking, ..."></textarea>
 
 
-                            <!--Light Guide Prong-->
+                            <!--Light Guide Prong--
                             <label for="result" style="margin-right: 15px;"><b>Light Guide Prong</b></label>
                             
                             <label for="pass">Pass</label>
@@ -404,7 +433,7 @@
                             <textarea name="result" id="description" rows="1" placeholder="Leaking, ..."></textarea>
 
 
-                            <!--Auxiliary Water Inlet/Jet-->
+                            <!--Auxiliary Water Inlet/Jet--
                             <label for="result" style="margin-right: 15px;"><b>Auxiliary Water Inlet/Jet</b></label>
                             
                             <label for="pass">Pass</label>
@@ -417,7 +446,7 @@
                             <textarea name="result" id="description" rows="1" placeholder="Leaking, ..."></textarea>
 
 
-                            <!--Tensioner-->
+                            <!--Tensioner--
                             <label for="result" style="margin-right: 15px;"><b>Tensioner</b></label>
                             
                             <label for="pass">Pass</label>
@@ -430,7 +459,7 @@
                             <textarea name="result" id="description" rows="1" placeholder="Loss, ..."></textarea>
 
 
-                            <!--Camera CCD/NBI/Eyescan-->
+                            <!--Camera CCD/NBI/Eyescan--
                             <label for="result" style="margin-right: 15px;"><b>Camera CCD/NBI/Eyescan</b></label>
                             
                             <label for="pass">Pass</label>
@@ -447,7 +476,7 @@
 
 
                             <!--FOR ERCP-->
-                            <!--Elevator Level-->
+                            <!--Elevator Level--
                             <label for="result" style="margin-right: 15px;"><b>Elevator Lever</b></label>
                             
                             <label for="pass">Pass</label>
@@ -460,7 +489,7 @@
                             <textarea name="result" id="description" rows="1" placeholder="Leaking, ..."></textarea>
 
 
-                            <!--Channel Elevator-->
+                            <!--Channel Elevator--
                             <label for="result" style="margin-right: 15px;"><b>Channel Elevator</b></label>
                             
                             <label for="pass">Pass</label>
@@ -473,7 +502,7 @@
                             <textarea name="result" id="description" rows="1" placeholder="Leaking, ..."></textarea>
 
 
-                            <!--Actuator Arm-->
+                            <!--Actuator Arm--
                             <label for="result" style="margin-right: 15px;"><b>Actuator Arm</b></label>
                             
                             <label for="pass">Pass</label>
@@ -489,7 +518,7 @@
                             <!--space-->
 
                             <!--FOR FIBER-->
-                            <!--Fibre Image-->
+                            <!--Fibre Image--
                             <label for="result" style="margin-right: 15px;"><b>Fibre Image</b></label>
                             
                             <label for="pass">Pass</label>
@@ -502,7 +531,7 @@
                             <textarea name="result" id="description" rows="1" placeholder="Blur, ..."></textarea>
 
 
-                            <!--Ocular Tower-->
+                            <!--Ocular Tower--
                             <label for="result" style="margin-right: 15px;"><b>Bending Rubber</b></label>
                             
                             <label for="pass">Pass</label>
@@ -513,8 +542,9 @@
                             
                             <label for="description" style="margin-left: 10px;">Description</label>
                             <textarea name="result" id="description" rows="1" placeholder="Non-Functioning, ..."></textarea>
+-->
 
-
+                            </div>
                         </div>
 
                         <!-- BUTTONS SECTION (Sits cleanly across the bottom) -->
