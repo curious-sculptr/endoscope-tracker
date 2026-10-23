@@ -34,7 +34,7 @@ In my medical lab, the entire inspection cycle is still manual:
 I am building this tool to replace paper with a single source of truth.
 
 > Photo of current paper report
-> [📄 View Sample Service Report - BF-H190 (PDF)](/docs/BF-H190-Service-Report-SAMPLE.pdf)
+> [📄 View Sample Service Report - BF-H190 (PDF)](BF-H190-Service-Report-SAMPLE.pdf)
 
 ### Who Is It For?
 
