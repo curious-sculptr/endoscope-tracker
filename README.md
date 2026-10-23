@@ -12,10 +12,19 @@ Coming soon — GitHub Pages
 - Desktop: Dashboard, Incoming Log, Outgoing Log, Serial History, Parts Reference
 - Mobile: Incoming Service Report (long form) - Phone-first input
 
+> Dashboard Draft
 > [Dashboard - Desktop](Dashboard.png)
+> 
+> Incoming Log Page Draft
 > [Incoming Log - Desktop](Incoming_log.png)
+> 
+> Outgoing Log Page Draft
 > [Outgoing Log - Desktop](Outgoing_log.png)
+> 
+> Parts Tracker Draft
 > [Outgoing Log - Desktop](Parts_inventory.png)
+>
+> Scope History Page Draft
 > [Outgoing Log - Desktop](Serial_history.png)
 
 ---
