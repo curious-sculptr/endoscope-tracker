@@ -1,0 +1,26 @@
+# User Stories
+
+## Field Service Technician (Primary)
+
+**Goal:** Get service report digitized and find history fast.
+
+1. As a technician, I want to fill the Incoming Service Report on my phone, so I don't have to write on paper and re-type in Excel.
+2. As a technician, I want to search a Serial Number and see full repair history, so I know if this damage is repeat.
+3. As a technician, I want to see all past photos/videos for a SN in one place, so I can compare old vs new damage.
+4. As a technician, I want to upload 3-4 photos directly from camera, so evidence is linked instantly.
+5. As a technician, I want to check my scope status (Pending/Verified/Done) without messaging QA.
+
+**Acceptance Criteria:** Form saves as draft, SN search returns <2 sec, photos show as thumbnails with date.
+
+## QA Lab Technician
+
+**Goal:** Verify fast with all evidence in one view.
+
+1. As QA, I want all incoming logs in one table with Drive links, so I can verify without asking.
+2. As QA, I want outgoing log to auto-link to incoming report by SN, so traceability is clear.
+3. As QA, I want to filter by Status (Pending Verification / Active Maintenance), so I can prioritize.
+
+## Edge Cases
+- No signal on lab floor → Save draft locally
+- Video too large → Save Drive link instead of direct upload
+- Same SN arrives twice in one week → Show warning + last repair
