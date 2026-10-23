@@ -68,8 +68,22 @@ Verifies reports and closes the maintenance cycle on desktop.
 1.  As QA, I want all incoming and outgoing logs in one searchable table with photo/video/Drive links attached, so I can verify without chasing files on chat.
 2.  As QA, I want outgoing reports to automatically link back to the incoming report and serial history, so the entire cycle is traceable.
 
-> [PLACEHOLDER: Mobile form sketch / Figma]
-> `![Incoming Service Report - Mobile](/docs/figma-screenshots/mobile-form.png)`
+
+** Mobile form sketch / Figma **
+
+> Scope Identity - First page on mobile
+> [Scope Identity - Mobile](Scope_identity_Step1.png)
+
+> Form adaptation of service report
+> [Incoming Service Report - Mobile](Damage_and_assesment_Step2.png)
+
+> Upload supporting photos/videos
+> [Evidence Upload - Mobile](Evidence_upload_Step3.png)
+
+> Submission Page
+> [Ready to Submit - Mobile](Evidence_upload_Ready_to_submit.png)
+
+
 
 ### What I'm Building
 
