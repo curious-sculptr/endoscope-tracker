@@ -13,9 +13,11 @@ Coming soon — GitHub Pages
 - Mobile: Incoming Service Report (long form) - Phone-first input
 
 > [PLACEHOLDER: Add Figma screenshots]
-> `![Dashboard - Desktop](/docs/figma-screenshots/dashboard.png)`
-> `![Incoming Log - Desktop](/docs/figma-screenshots/incoming.png)`
-> `![Outgoing Log - Desktop](/docs/figma-screenshots/outgoing.png)`
+> [Dashboard - Desktop](Dashboard.png)
+> [Incoming Log - Desktop](Incoming_log.png)
+> [Outgoing Log - Desktop](Outgoing_log.png)
+> [Outgoing Log - Desktop](Parts_inventory.png)
+> [Outgoing Log - Desktop](Serial_history.png)
 
 ---
 
