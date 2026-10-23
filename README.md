@@ -22,10 +22,10 @@ Coming soon — GitHub Pages
 > [Outgoing Log - Desktop](Outgoing_log.png)
 > 
 > Parts Tracker Draft
-> [Outgoing Log - Desktop](Parts_inventory.png)
+> [Parts Inventory - Desktop](Parts_inventory.png)
 >
 > Scope History Page Draft
-> [Outgoing Log - Desktop](Serial_history.png)
+> [Serial History - Desktop](Serial_history.png)
 
 ---
 
@@ -71,16 +71,16 @@ Verifies reports and closes the maintenance cycle on desktop.
 
 ** Mobile form sketch / Figma **
 
-> Scope Identity - First page on mobile
+> Step 1: Scope Identity - First page on mobile
 > [Scope Identity - Mobile](Scope_identity_Step1.png)
 
-> Form adaptation of service report
+> Step 2: Form adaptation of service report
 > [Incoming Service Report - Mobile](Damage_and_assesment_Step2.png)
 
-> Upload supporting photos/videos
+> Step 3: Upload supporting photos/videos
 > [Evidence Upload - Mobile](Evidence_upload_Step3.png)
 
-> Submission Page
+> Final: Submission Page
 > [Ready to Submit - Mobile](Evidence_upload_Ready_to_submit.png)
 
 
