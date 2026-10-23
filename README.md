@@ -12,7 +12,6 @@ Coming soon — GitHub Pages
 - Desktop: Dashboard, Incoming Log, Outgoing Log, Serial History, Parts Reference
 - Mobile: Incoming Service Report (long form) - Phone-first input
 
-> [PLACEHOLDER: Add Figma screenshots]
 > [Dashboard - Desktop](Dashboard.png)
 > [Incoming Log - Desktop](Incoming_log.png)
 > [Outgoing Log - Desktop](Outgoing_log.png)
