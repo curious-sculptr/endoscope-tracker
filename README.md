@@ -112,16 +112,4 @@ Built from scratch on purpose — this is my portfolio piece documenting the ful
 
 **Design Principle:** Clean, clinical, professional. White and soft gray surfaces, blue primary #2563EB for actions, readable tables. Designed for long shifts — spacious on desktop, large touch targets on mobile.
 
-### Project Structure (STILL BUILDING)
-/docs
-  /figma-screenshots    <- Desktop views + mobile form
-  /photos               <- Paper forms (redacted - blur hospital/SN)
-  user-stories.md       <- Detailed user stories for tech + QA
-  current-workflow.md   <- How it works today: paper → Drive
-  research.md           <- Why you chose HTML/CSS from scratch, SQL later
-/prototype              <- Your actual HTML/CSS code
-  index.html
-  /css
-  /assets
-README.md               <- This file (main portfolio story)
-roadmap.md              <- Checklist of what is done / next
+
